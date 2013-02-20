@@ -9,6 +9,6 @@ set smarttab
 set smartindent
 
 map <F4> :Vex<cr>
-
-" ================ Netrw ============================
-let g:netrw_liststyle=3 "Set to tree mode
+map <F8> :vnew <bar> exe '0r!svn diff'<cr>:set ft=diff<cr>
+map <F7> ggdG:0r!svn diff<cr>:set ft=diff<cr>
+colorscheme asmanian_blood
